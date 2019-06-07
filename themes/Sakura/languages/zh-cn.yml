@@ -41,15 +41,28 @@ insight:
     untitled: '(无标题)'
 
 #category
-技术:
-    zh: 野生技术协会
-    en: Geek – Only for Love
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
-生活:
-    zh: 生活
-    en: live
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
-
+学习:
+    zh: 踩着别人的脚印
+    en: The best way to make progress in my view is to learn from others
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/9.png
+膜拜:
+    zh: 膜拜
+    en: Links for big old men
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/10.jpg
+唠唠:
+    zh: 唠唠嗑
+    en: Maybe i just want to cheer for myself
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/8.jpg
 #tag
-悦读:
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+java:
+    en: Be a coder
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/4.png 
+破万卷:
+    en: 书读百遍其意自现
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/12.jpg
+行千里:
+    en: 千里之行始于足下
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/3.jpg
+web:
+    en: Set my blog
+    img: https://cdn.jsdelivr.net/gh/eli486/cdn@0.5/images/6.jpg

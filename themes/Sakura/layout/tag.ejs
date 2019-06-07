@@ -1,7 +1,7 @@
 <%
   var img = page.tag + '.img';
   //var zh = page.tag + '.zh';
-  //var en = page.tag + '.en';
+  var en = page.tag + '.en';
 %>
 <div class="pattern-center-blank"></div>
 <div class="pattern-center ">
@@ -10,6 +10,9 @@
   </div>
   <header class="pattern-header ">
     <h1 class="cat-title"><%= __(page.tag) %></h1>
+    <span class="cat-des">
+      <p><%= __(en) %></p>
+    </span>
   </header>
 </div>
 <div id="content" class="site-content">

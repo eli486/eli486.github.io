@@ -5,12 +5,12 @@ avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
 authorLink: hojun.cn
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
-categories: 技术
+categories: 膜拜
 date: 2018-12-12 22:16:01
 comments: true
 tags: 
  - web
- - 悦读
+ - 破万卷
 keywords: Sakura
 description: hexo-sakura主题使用教程
 photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png

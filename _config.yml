@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: eli
-subtitle:
-description: 好少年光芒万丈
+title: Eli の Small Cottage
+subtitle: Be a coder
+description: 长路漫漫，唯java作伴
 keywords:
-author: hojun
+author: junjiaGan
 language: zh-cn
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: https://eli486.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,19 +81,19 @@ deploy:
   type: git
   repo: 
     # github: git@github.com:honjun/honjun.github.io.git
-    # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://git.coding.net/hojun/hojun.git
+    github: https://github.com/eli486/eli486.github.io.git
+    # coding: https://git.coding.net/hojun/hojun.git
   branch: master
 
-# backup
+# Backup
 backup:
   type: git
   message: backup my blog of https://yourname.github.io/
   repository:
-    # github: https://github.com/honjun/honjun.github.io.git,backup
-    coding: https://github.com/eli486/eli486.github.io.git,backup
+    github: https://github.com/eli486/eli486.github.io.git,backup
+    # coding: https://git.coding.net/hojun/hojun.git,backup
 
-#RSS
+# RSS
 feed:
   type: atom
   path: atom.xml
@@ -103,3 +103,26 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# Live2d
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-wanko
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+  display:
+    position: left
+    width: 400
+    height: 400
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
