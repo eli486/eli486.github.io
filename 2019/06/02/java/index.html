@@ -205,7 +205,7 @@
                 <a href="javascript:;">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
-                    日常
+                    闲 生
                   </span>
                 </a>
                 
@@ -237,6 +237,16 @@
               </li>
             
               <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友链
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
                 <a href="/chikala/">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-hand-o-right fa-pulse" aria-hidden="true"></i>
@@ -251,16 +261,6 @@
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
                     留言板
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/links/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
-                    友人帐
                   </span>
                 </a>
                 
@@ -383,20 +383,39 @@
 <p>group_concat()方法 组连接<br>查询每个部门的员工姓名和工资,要求每个部门的数据显示在一行<br>    select deptno,group_concat(ename,’:’,sal) from emp group by deptno;</p>
 <h2 id="Jsp与Servlet"><a href="#Jsp与Servlet" class="headerlink" title="Jsp与Servlet"></a>Jsp与Servlet</h2><p>Jsp:Java Server Pages<br>Servlet是由Sun公司开发的用来扩展web服务器的组件规范。</p>
 <h2 id="Spring框架"><a href="#Spring框架" class="headerlink" title="Spring框架"></a>Spring框架</h2><p>1.什么是框架<br>框架是为了简化代码而实现的一种符合标准业务规范的组件。<br>2.Spring框架的作用<br>通过Spring框架，解决了创建对象和管理对象的问题。</p>
-<p>常用注解：<br>@Component<br>@Controller<br>@Service<br>@Respority</p>
-<h2 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h2><p>常用注解：<br>@RequestMapping<br>@</p>
-<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><p>简化持久层开发</p>
-<h2 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h2><p>@RestController<br>Json:数据类型<br>AJAX:Asynchronous Javascript And Xml</p>
+<p>常用注解：<br>@Component<br>@Controller<br>@Service<br>@Responrity</p>
+<h2 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h2><p>常用注解：<br>@RequestMapping</p>
+<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><p>简化持久层开发：<br>1.创建实体类<br>2.配置mybatis映射，在mybatis配置文件config.xml中添加sql语句<br>3.添加接口的抽象方法</p>
+<h2 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h2><p>@RestController：@Controller和@ResponseBody的组合<br>Json:数据类型<br>AJAX:Asynchronous Javascript And Xml</p>
 <p>$.ajax({<br>    <!--
         url:请求提交路径
         data:请求参数
         type:请求方式
         dataType:响应数据类型，有text、html、json
         success:响应成功（即响应状态码200）时的回调(callback)函数,函数的参数是Json数据对应的对象
-    --><br>    “url”:””,<br>    “data”:””,<br>    “type”:””,<br>    “dataType”:””<br>    “success”:function(){</p>
-<p>}<br>})</p>
+    --><br>    “url”:””,<br>    “data”:””,<br>    “type”:””,<br>    “dataType”:””<br>    “success”:function(obj){</p>
+<pre><code>},
+&quot;error&quot;:function(obj){
+
+}
+</code></pre><p>})</p>
 <h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><p>SpringBoot是一个轻量级框架。<br>什么是轻量级框架？首先，要理解轻量级的概念，这是相对于重量级提出的。<br>可参考(<a href="https://blog.csdn.net/qq_29229567/article/details/80561332" target="_blank" rel="noopener">https://blog.csdn.net/qq_29229567/article/details/80561332</a>)<br>我们之前用的框架都是需要进行许多配置，而springboot简化了这些配置，减少了开发的复杂度，这就是轻量级的表现，也是springboot的特性之一：约定大于配置。</p>
-<h2 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h2>
+<h2 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h2><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p>基本语法： 命令 -选项 参数1 参数2</p>
+<pre><code>cd         切换到某个目录
+ls      显示当前目录下内容
+pwd      显示当前所在目录
+cat        查看当前目录内容
+more     分屏显示内容
+mkdir     创建文件夹
+touch    创建文件
+mv        移动文件
+rm        删除文件
+cp        复制文件
+ssh    用户名@ip
+vim：
+    i     插入模式
+    Esc+shift:wq 保存并退出
+</code></pre><h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2>
         </div>
         <!-- .entry-content -->
          <div class="single-reward">
@@ -772,7 +791,7 @@ jQuery(document).ready(function($) {
         <a href="javascript:;">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
-            日常
+            闲 生
           </span>
         </a>
         
@@ -804,6 +823,16 @@ jQuery(document).ready(function($) {
       </li>
     
       <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友链
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
         <a href="/chikala/">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-hand-o-right fa-pulse" aria-hidden="true"></i>
@@ -818,16 +847,6 @@ jQuery(document).ready(function($) {
           <span class="faa-parent animated-hover">
             <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
             留言板
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/links/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
-            友人帐
           </span>
         </a>
         

@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eli486.github.io/bangumi/index.html</loc>
+    
+    <lastmod>2019-07-28T15:16:11.353Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eli486.github.io/2019/06/02/java/</loc>
     
-    <lastmod>2019-06-30T14:19:49.769Z</lastmod>
+    <lastmod>2019-07-10T13:50:55.808Z</lastmod>
     
   </url>
   
@@ -58,21 +65,14 @@
   </url>
   
   <url>
+    <loc>https://eli486.github.io/comment/index.html</loc>
+    
+    <lastmod>2019-04-17T12:23:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eli486.github.io/client/index.html</loc>
-    
-    <lastmod>2019-04-17T12:23:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eli486.github.io/lab/index.html</loc>
-    
-    <lastmod>2019-04-17T12:23:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eli486.github.io/bangumi/index.html</loc>
     
     <lastmod>2019-04-17T12:23:30.000Z</lastmod>
     
@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://eli486.github.io/comment/index.html</loc>
+    <loc>https://eli486.github.io/lab/index.html</loc>
     
     <lastmod>2019-04-17T12:23:30.000Z</lastmod>
     
