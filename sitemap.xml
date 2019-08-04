@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eli486.github.io/bangumi/index.html</loc>
+    
+    <lastmod>2019-08-04T14:35:52.240Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eli486.github.io/theme-sakura/index.html</loc>
     
     <lastmod>2019-08-02T14:26:31.555Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://eli486.github.io/links/index.html</loc>
     
     <lastmod>2019-08-02T14:21:54.032Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eli486.github.io/bangumi/index.html</loc>
-    
-    <lastmod>2019-07-29T14:30:51.068Z</lastmod>
     
   </url>
   
