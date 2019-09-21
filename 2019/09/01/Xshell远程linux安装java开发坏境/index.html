@@ -331,42 +331,26 @@
         
         <div class="entry-content">
           <h1 id="记录VM虚拟机用Xshell搭建java开发环境"><a href="#记录VM虚拟机用Xshell搭建java开发环境" class="headerlink" title="记录VM虚拟机用Xshell搭建java开发环境"></a>记录VM虚拟机用Xshell搭建java开发环境</h1><h2 id="Xshell连接linux虚拟机"><a href="#Xshell连接linux虚拟机" class="headerlink" title="Xshell连接linux虚拟机"></a>Xshell连接linux虚拟机</h2><h3 id="1-安装jre"><a href="#1-安装jre" class="headerlink" title="1.安装jre:"></a>1.安装jre:</h3><pre><code> sudo yum install java-1.8.0-openjdk
-</code></pre><blockquote>
-<p>然后，执行命令</p>
-</blockquote>
+</code></pre><p> 然后，执行命令</p>
 <pre><code>java -version
-</code></pre><blockquote>
-<p>查看jre安装结果</p>
-</blockquote>
+</code></pre><p>查看jre安装结果</p>
 <h3 id="2-安装jdk"><a href="#2-安装jdk" class="headerlink" title="2.安装jdk"></a>2.安装jdk</h3><pre><code>sudo yum install java-1.8.0-openjdk-devel  -y
-</code></pre><blockquote>
-<p>然后，执行命令</p>
+</code></pre><p> 然后，执行命令</p>
 <pre><code>javac -version
-</code></pre></blockquote>
-<blockquote>
-<p>查看jdk版本</p>
-</blockquote>
+</code></pre><p>查看jdk版本</p>
 <h3 id="3-配置Jdk环境变量"><a href="#3-配置Jdk环境变量" class="headerlink" title="3.配置Jdk环境变量"></a>3.配置Jdk环境变量</h3><pre><code>vim /etc/profile
-</code></pre><blockquote>
-<p>滚动到底端</p>
-</blockquote>
-<blockquote>
+</code></pre><p>滚动到底端</p>
 <p>添加环境变量</p>
-<pre><code>export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-3.b13.el7_5.x86_64
-export CALSSPATH=$JAVA_HOME/lib/*.*
-export PATH=$PATH:$JAVA_HOME/bin
-</code></pre></blockquote>
-<blockquote>
+<pre><code> export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-3.b13.el7_5.x86_64
+ export CALSSPATH=$JAVA_HOME/lib/*.*
+ export PATH=$PATH:$JAVA_HOME/bin
+</code></pre><blockquote>
 <p>其中/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-3.b13.el7_5.x86_64是你的jdk默认安装路径</p>
 </blockquote>
-<blockquote>
 <p>执行命令查看</p>
-</blockquote>
 <pre><code>cd /usr/lib/jvm
 ls
-</code></pre><blockquote>
-<p>然后使配置文件修改生效</p>
-</blockquote>
+</code></pre><p>然后使配置文件修改生效</p>
 <pre><code>source /etc/profile
 </code></pre><p>转自：<a href="https://blog.csdn.net/yzh_1346983557/article/details/81509329" target="_blank" rel="noopener">https://blog.csdn.net/yzh_1346983557/article/details/81509329</a></p>
 <h1 id="记录VM虚拟机用Xshell搭建Tomcat"><a href="#记录VM虚拟机用Xshell搭建Tomcat" class="headerlink" title="记录VM虚拟机用Xshell搭建Tomcat"></a>记录VM虚拟机用Xshell搭建Tomcat</h1><h3 id="切换到自己准备存放tomcat的路径下，然后下载tomcat"><a href="#切换到自己准备存放tomcat的路径下，然后下载tomcat" class="headerlink" title="切换到自己准备存放tomcat的路径下，然后下载tomcat"></a>切换到自己准备存放tomcat的路径下，然后下载tomcat</h3><blockquote>
@@ -381,18 +365,25 @@ ls
 </code></pre><h3 id="将tomcat加入到环境变量中"><a href="#将tomcat加入到环境变量中" class="headerlink" title="将tomcat加入到环境变量中"></a>将tomcat加入到环境变量中</h3><pre><code>vim /etc/profile
 在最底端添加
 export CATALINA_HOME=/root/apache-tomcat-7.0.96
-</code></pre><blockquote>
-<p>然后使配置文件修改生效</p>
-</blockquote>
+</code></pre><p>然后使配置文件修改生效</p>
 <pre><code>source /etc/profile
 </code></pre><h3 id="启动tomcat"><a href="#启动tomcat" class="headerlink" title="启动tomcat"></a>启动tomcat</h3><pre><code>cd apache-tomcat-7.0.96/bin
 ./startup.sh
-</code></pre><blockquote>
-<p>浏览器中输入ip:8080,出现页面即已生效</p>
-</blockquote>
+</code></pre><p>浏览器中输入localhost:8080或者ip:8080,出现页面即已生效</p>
 <h4 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h4><blockquote>
 <p>将项目打包成war文件放入apache-tomcat-7.0.96/webapps目录下即可<br>启动tomcat会自动解压该项目，浏览器输入ip:8080/项目名称 即可访问项目</p>
 </blockquote>
+<p><b>若在外网浏览器不可访问，则应该开放防火墙8080端口:<br>Centos7以上防火墙为firewall:</b><br>1.查看防火墙状态</p>
+<pre><code>firewall-cmd --state
+</code></pre><p>2.若未开启</p>
+<pre><code>systemctl start firewalld.service
+</code></pre><p>3.开放8080端口</p>
+<pre><code>firewall-cmd --zone=public --add-port=8080/tcp --permanent
+</code></pre><p>4.查询端口是否开启</p>
+<pre><code>firewall-cmd --zone=public --add-query=8080/tcp --permanent；
+</code></pre><p>5.重启防火墙</p>
+<pre><code>systemctl restart firewalld.service
+</code></pre><p>现在你应该可以访问了！！</p>
 <h3 id="关闭tomcat"><a href="#关闭tomcat" class="headerlink" title="关闭tomcat"></a>关闭tomcat</h3><pre><code>./shutdown.sh
 </code></pre>
         </div>
