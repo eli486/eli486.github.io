@@ -330,14 +330,17 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="记录VM虚拟机搭建Chevereto图床"><a href="#记录VM虚拟机搭建Chevereto图床" class="headerlink" title="记录VM虚拟机搭建Chevereto图床"></a>记录VM虚拟机搭建Chevereto图床</h1><h2 id="Xshell连接linux虚拟机"><a href="#Xshell连接linux虚拟机" class="headerlink" title="Xshell连接linux虚拟机"></a>Xshell连接linux虚拟机</h2><h3 id="1-Cnetos安装宝塔面板"><a href="#1-Cnetos安装宝塔面板" class="headerlink" title="1.Cnetos安装宝塔面板:"></a>1.Cnetos安装宝塔面板:</h3><pre><code> yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh
+          <h1 id="记录VM虚拟机搭建Chevereto图床"><a href="#记录VM虚拟机搭建Chevereto图床" class="headerlink" title="记录VM虚拟机搭建Chevereto图床"></a>记录VM虚拟机搭建Chevereto图床</h1><h2 id="Xshell连接linux虚拟机"><a href="#Xshell连接linux虚拟机" class="headerlink" title="Xshell连接linux虚拟机"></a>Xshell连接linux虚拟机</h2><h3 id="1-Cnetos安装宝塔面板"><a href="#1-Cnetos安装宝塔面板" class="headerlink" title="1.Cnetos安装宝塔面板:"></a>1.Cnetos安装宝塔面板:</h3><pre><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh
 </code></pre><p>安装完成，显示如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/安装宝塔.png" alt></p>
 <h3 id="登录宝塔面板"><a href="#登录宝塔面板" class="headerlink" title="登录宝塔面板"></a>登录宝塔面板</h3><p>然后，用内网ip替换图中的ip来访问宝塔面板<br>浏览器输入192.168.159.130:8888/89dc0f29<br>输入账号密码登录</p>
 <h3 id="添加站点"><a href="#添加站点" class="headerlink" title="添加站点"></a>添加站点</h3><p><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/添加站点.png" alt><br>我是在100端口下创建站点，要注意防火墙端口的开放，数据库可以自己修改账号密码。</p>
-<p>成功之后的页面,我这ip不一样是之前创建的时候忘了截图，不要在意：<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/站点创建成功.png" alt></p>
-<h3 id="上传目录"><a href="#上传目录" class="headerlink" title="上传目录"></a>上传目录</h3><p>点击宝塔面板菜单栏–&gt;文件–&gt;上传<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/上传目录.png" alt><br>将下载好的免费的Chevereto解压的文件上传<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/选中解压文件.png" alt><br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/上传.png" alt></p>
-<p>上传成功后进入chevereto文件目录，将里面的文件剪切到上级目录<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/剪切.png" alt><br>可以删除剪切后的空目录<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/删除空目录.png" alt><br>然后刷新刚才创建成功的页面<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/刷新.png" alt></p>
+<p>成功之后的页面（<b>我这ip不一样是之前创建的时候忘了截图，不要在意这些</b>）：<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/站点创建成功.png" alt></p>
+<h3 id="上传目录"><a href="#上传目录" class="headerlink" title="上传目录"></a>上传目录</h3><p>点击宝塔面板菜单栏–&gt;文件–&gt;进入站点目录–&gt;上传<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/上传目录.png" alt></p>
+<p>将下载好的免费的Chevereto解压的文件上传<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/选中解压文件.png" alt><br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/上传.png" alt></p>
+<p>上传成功后进入chevereto文件目录，将里面的文件剪切到上级目录<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/剪切.png" alt></p>
+<p>可以删除剪切后的空目录<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/删除空目录.png" alt></p>
+<p>然后刷新刚才创建成功的页面<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/刷新.png" alt></p>
 <h3 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h3><p>站点目录app下缺少settings.php文件,创建一个settings.txt,随便输入内容,如123，修改后缀为php<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/上传settings.png" alt><br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/再次刷新.png" alt></p>
 <h3 id="修改权限"><a href="#修改权限" class="headerlink" title="修改权限"></a>修改权限</h3><p>站点目录权限不足，需要修改</p>
 <pre><code>chattr -i /www/wwwroot/192.168.159.129/.user.ini
@@ -348,7 +351,17 @@ chown -R www:www /www/wwwroot/192.168.159.129/
             try_files $uri $uri/ /index.php?$query_string;
         }
 </code></pre><p><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/添加伪静态.png" alt><br>再刷新页面后<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/刷新之后.png" alt><br>哦嚯！可以安装chevereto了~</p>
-<h3 id="安装Chevereto"><a href="#安装Chevereto" class="headerlink" title="安装Chevereto"></a>安装Chevereto</h3><p>添加数据库，创建站点时候创的数据库，复制过来<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/添加数据库.png" alt><br>添加邮箱，自己写<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/添加邮箱.png" alt><br>完成后<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/完成.png" alt><br>进入admin dashboard<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/登录.png" alt><br>这里有很多配置，设置上传大小、主页等，自己根据需求修改，百度一下就会了<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/admindashboard.png" alt><br>点击上方中间的Chevereto图标进入主页<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/index.png" alt></p>
+<h3 id="安装Chevereto"><a href="#安装Chevereto" class="headerlink" title="安装Chevereto"></a>安装Chevereto</h3><p>添加数据库，创建站点时候创的数据库，复制过来<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/添加数据库.png" alt></p>
+<p>添加邮箱，自己写<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/添加邮箱.png" alt></p>
+<p>完成后<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/完成.png" alt></p>
+<p>进入admin dashboard<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/登录.png" alt></p>
+<p>这里有很多配置，设置上传大小、主页等，自己根据需求修改，百度一下就会了<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/admindashboard.png" alt></p>
+<p>点击上方中间的Chevereto图标进入主页<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.8/chevereto/index.png" alt></p>
+<h2 id="局域网与外网访问图床"><a href="#局域网与外网访问图床" class="headerlink" title="局域网与外网访问图床"></a>局域网与外网访问图床</h2><p>要实现局域网访问，首先要添加端口映射，具体的操作可以参考<br><a href="https://blog.csdn.net/Mrqiang9001/article/details/80820321" target="_blank" rel="noopener">VM虚拟机端口映射</a></p>
+<p>局域网访问：<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.9/chevereto/局域网访问.png" alt></p>
+<p>实现外网访问要本地防火墙添加端口规则：<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.9/chevereto/本地防火墙端口.png" alt></p>
+<p>外网访问，此处ip就是安装宝塔面板完成后显示的，你也可以通过<a href="http://m.ip138.com/" target="_blank" rel="noopener">查询ip地址</a>找到你的ip：<br><img src="https://cdn.jsdelivr.net/gh/eli486/cdn@0.9/chevereto/外网访问.png" alt></p>
+<p>以上就是VM虚拟机自建服务器搭建图床全部过程，虽然免费，但一点不好就是你得一直开着你的虚拟机搭建的服务器，作为家用还行吧。</p>
 
         </div>
         <!-- .entry-content -->
